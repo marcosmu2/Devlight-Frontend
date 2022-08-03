@@ -1,0 +1,18 @@
+<header class="bg-black">
+    <img src="../../assets/images/logoDevlights.png" alt="logo" height="100%">
+    <div class="header-container">
+        <a class="pointer"> Home </a>
+        <a class="pointer"> Browser </a>
+        <div class="dropdown">
+            <button class="btn-cart pointer" (click)="cartChanged()"><i class="fa-solid fa-cart-shopping cart-icon pointer"></i>  cart {{ gamesSelected.length }} </button>
+            <div *ngIf="isCartOpen" class="dropdown-content bg-black">
+                <ng-template ngFor  let-game [ngForOf]="gamesSelected">
+                    <div>{{game.title}}</div>
+                    <div>{{ (( +game.savings > 0 ) ? game.salePrice  : game.normalPrice) | currency:'ARS':'symbol-narrow':'1.2-2'}}</div>
+                </ng-template>
+                <div><b>TOTAL</b></div>
+                <div><b>{{total | currency:'ARS':'symbol-narrow':'1.2-2' }}</b></div>
+              </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,43 @@
+.container-filter{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 80%;
+    height: 10%;
+}
+
+.search-container {
+    display: inline-flex;
+    width: 150%;
+    margin: 5px;
+    flex: 1 1 300px;
+    position: relative;
+    background: linear-gradient(90deg, rgba(233,115,30,1) 0%, rgba(255,26,117,1) 35%, rgba(138,43,200,1) 100%) border-box ;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    overflow: hidden;
+  }
+
+  
+  .search-icon {
+    padding: 0.5rem;
+    height: 25px;
+    color: rgba(255,26,117,1);
+  }
+
+  .search-box {
+      border: 0;
+      font-weight:bold;
+      border-radius: 0px;
+      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+      flex: 1;
+      font-size: 20px;
+      outline: none;
+      color: rgba(255,26,117,1);
+    }
+    
+    .search-box::placeholder {
+      color: rgba(255,26,117,0.7);
+    }
+
+

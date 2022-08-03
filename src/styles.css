@@ -1,0 +1,26 @@
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  app-root{
+  height: 100%;
+  display: block;
+}
+
+.pointer{
+    cursor: pointer;
+}
+  
+  
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.bg-dark-grey{
+    background-color: #333333;
+    color: white;
+}

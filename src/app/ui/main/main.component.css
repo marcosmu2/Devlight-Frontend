@@ -1,0 +1,84 @@
+.container-main{
+    height: auto;
+}
+
+.banner{
+    width: 100%;
+}
+
+.container-table{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 5px auto 0px;
+    padding-bottom: 1rem;
+}
+
+.container-data{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 2%;
+}
+
+.img-game{
+    margin-top: 1rem;
+}
+
+.container-relative{
+    position: relative;
+}
+
+.border-selected{
+    border: 2px solid rgb(255, 26, 117);
+    border-radius: 6px;
+}
+
+.container-text-sale{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.sale{
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    background-color: rgb(204, 0, 0);
+    top: 0;
+    right: 0;
+    border-radius: 100%;
+}
+
+.container-game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 5px, 6px;
+}
+
+.container-star{
+    display: flex;
+    justify-content: center;
+}
+
+.star{
+    color: rgba(233,115,30,1);
+}
+
+.btn-price{
+    padding: 5px 0px;
+    color: white;
+    font-size: large;
+    margin-top: 10px;
+    background: linear-gradient(90deg, rgba(233,115,30,1) 0%, rgba(255,26,117,1) 35%, rgba(138,43,200,1) 100%) border-box ;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+

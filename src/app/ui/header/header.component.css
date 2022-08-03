@@ -1,0 +1,45 @@
+header {
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    font-weight: bold;
+    font-size:larger;
+    width: 30%;
+}
+
+.btn-cart{
+    font-size: 100%;
+    background-color: rgba(255,255,255,0);
+    color: rgb(255, 26, 117);
+    border: 2px solid rgb(255, 26, 117);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cart-icon{
+    margin: 2px;
+}
+
+.dropdown{
+    position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 1rem 1rem;
+    min-width: 30%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 2px solid rgb(255, 26, 117);
+    z-index: 1;
+  }
+  

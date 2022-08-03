@@ -1,0 +1,33 @@
+<div class="bg-black container-main">
+    <img class="banner" src="../../../assets/images/resident-evil-hero-banner.jpg" alt="banner page" width="100%">
+    <app-filter (onInputChanges)="inputChanged($event)"></app-filter>
+    <div class="container-table">
+        <div class="container-data">
+            <ng-template ngFor  let-game [ngForOf]="games">
+                <div [class.border-selected]="game.isSelected" class="container-relative pointer" (click)="selectDeal(game)"> 
+                    <div class="sale" *ngIf="+game.savings > 0">
+                        <div class="container-text-sale">
+                            <span>{{+game.savings | number: '1.0-0' }}% off</span> 
+                        </div>
+                    </div>
+                    <div class="container-game">
+                        <img class="img-game" [src]="game.thumb" alt="game.title" width="90%">
+                        <b style="height: 50px;">{{ game.title }}</b>
+                        <span style="text-align: center; margin-top: 20px;"> <small>Steam Review</small></span>
+                        <div class="container-star">
+                            <i [ngClass]="{'fa-solid': +game.steamRatingPercent >= 20 , 'fa-regular' : +game.steamRatingPercent < 20 }" class="fa-star fa-xl star"></i>
+                            <i [ngClass]="{'fa-solid': +game.steamRatingPercent >= 40 , 'fa-regular' : +game.steamRatingPercent < 40 }"class="fa-star fa-xl star"></i>
+                            <i [ngClass]="{'fa-solid': +game.steamRatingPercent >= 60 , 'fa-regular' : +game.steamRatingPercent < 60 }"class="fa-star fa-xl star"></i>
+                            <i [ngClass]="{'fa-solid': +game.steamRatingPercent >= 80 , 'fa-regular' : +game.steamRatingPercent < 80 }"class="fa-star fa-xl star"></i>
+                            <i [ngClass]="{'fa-solid': +game.steamRatingPercent === 100 , 'fa-regular' : +game.steamRatingPercent < 100 }"class="fa-star fa-xl star"></i>
+                        </div>
+                        <button class="btn-price">
+                            <span *ngIf="+game.savings > 0" style="margin-right: 1rem;" >{{game.salePrice  | currency:'ARS':'symbol-narrow':'1.2-2' }}</span>
+                            <span [class.line-through]="+game.savings > 0">{{game.normalPrice  | currency:'ARS':'symbol-narrow':'1.2-2' }}</span>
+                        </button>
+                    </div>
+                </div>
+            </ng-template>
+        </div>
+    </div>
+</div>
