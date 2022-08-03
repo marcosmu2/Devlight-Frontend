@@ -1,6 +1,4 @@
-import { Game } from './interfaces/data.interface';
-import { Component, OnInit } from '@angular/core';
-import { DataService } from './services/data.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +8,7 @@ import { DataService } from './services/data.service';
 export class AppComponent {
 
 
-  constructor(private dataService: DataService){
+  constructor(){
 
   }
 

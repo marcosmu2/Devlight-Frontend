@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, BehaviorSubject, lastValueFrom } from 'rxjs';
+import { Observable, BehaviorSubject } from 'rxjs';
 import { Games, Game} from '../interfaces/data.interface';
 
 @Injectable({

@@ -1,7 +1,6 @@
 import { Games, Game } from './../../interfaces/data.interface';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
-import { map } from 'rxjs';
 
 @Component({
   selector: 'app-main',
